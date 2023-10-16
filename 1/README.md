@@ -13,8 +13,8 @@
 
 ***
 
-{% content-ref url="undefined.md" %}
-[undefined.md](undefined.md)
+{% content-ref url="undefined/" %}
+[undefined](undefined/)
 {% endcontent-ref %}
 
 {% content-ref url="typescript.md" %}
