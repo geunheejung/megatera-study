@@ -23,3 +23,43 @@ npm i -D <package>
 
 ***
 
+npx도 패키지의 일종이다. 특정 패키지의 대해서 로컬에 설치하지 않아도, 해당 패키지가 제공하는 명령어를 사용할 수 있게 해주며, 매번 최신 버전의 파일을 임시로 불러와 실행 시킨 후, 다시 해당 파일은 없애는 방식으로 실행된다.
+
+#### CRA와 같은 보일러 플레이트 모듈에 효과적
+
+* 보일러 플레이트 모듈의 버전 관리를 신경 써주지 않아도 프로젝트 구성 시 npx 를 통해 최신 버전의 모듈에 명령어를 통해 구성할 수 있다.
+* 물론 관리되는 특정 버전이 있다면 추가 명령어 줘서 버전 특정 하거나 또는 로컬에서 관리 해줘야 함.
+
+### tsconfig
+
+***
+
+#### JSX
+
+[https://www.typescriptlang.org/ko/docs/handbook/jsx.html](https://www.typescriptlang.org/ko/docs/handbook/jsx.html)
+
+* XML과 같은 유사한 내장형 구문.
+* 구현에 따라 변환의 이미가 다르나 유효한 JavaScript로 변환되어야 함.
+* 타입스크립트는
+  * 임베딩,&#x20;
+  * 타입 검사
+  * JSX -> JavaScript로 직접 컴파일 하는 것을 지원함.
+
+#### tsconfig.jsx(preserve, react)
+
+* 위 모드는 출력 단계에만 영향을 미치며 타입 검사에는 영향을 미치지 않음.
+
+**preserve**
+
+* JSX를 출력 일부로 유지하여 -> 다른 변환 단계(예: Babel)에서 추가로 사용함
+* 출력 파일 확장자 `.jsx`
+
+**react**
+
+* `React.createElemenet` 를 출력하고 JSX 변환을 거칠 필요가 없음.
+* 출력 파일 확장자 `.js`
+
+
+
+
+
