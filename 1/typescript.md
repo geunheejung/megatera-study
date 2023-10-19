@@ -196,3 +196,9 @@ let me: JuniorDeveloper = {
 
 {% embed url="https://velog.io/@geuni1013/Promise.all-%ED%83%80%EC%9E%85-%EC%A0%95%EC%9D%98" %}
 
+### VSCode 자동 완성 + 실시간 오류 검사
+
+*   오래된 라이브러리의 경우 d.ts 파일만 따로 패키지로 제공된다.
+
+    * 라이브러리는 자바스크립트로 작성되어 있고 외부 또는 내부 타입 정의 파일을 통해 타입 정보를 타입스크립트에게 제공 해줌
+
