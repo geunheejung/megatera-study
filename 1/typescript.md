@@ -99,3 +99,80 @@ TS 에서 튜플..
 // Some code
 type UserInfo = readonly [number , string, string ,string , boolean]
 ```
+
+### 타입 추론&#x20;
+
+* 타입스크립트는 자바스크립트 언어를 안다. 그래서 대부분의 경우 타입을 생성해준다.(생각보다 똑똑함)
+  * 사람이 임의로 타입을 할당하는 것 보다 더 똑똑할 수 있다.
+
+```typescript
+// Some code
+let name = 'geuni'; // string;
+const name2 = 'geuni'; // 'geuni' const는 상수로 추론되어 리터럴 타입이 된다!
+```
+
+자바스크립트가 동작하는 방식을 이해함으로써 타입스크립트는 자바스크립트 코드를 받아들이면서 타입을 가지는 타입 시스템을 구축할 수 있다.
+
+* 타입스크립트는 자바스크립트의 슈퍼셋 이니깐!
+
+### 유니온
+
+* 타입스크립트에서 타입을 집합의 개념으로 이해하면 좋다.
+* 유니언 타입은 여러 타입 중 하나일 수 있음을 선언하는 방법이다.
+  * 합집합!
+
+```typescript
+// Some code
+type MyBool = true | false; // true집합과 false집합
+
+interface Tteokbokki {
+  spicy: number;
+  hasFishCake?: boolean;
+}
+
+interface Pizza {
+  toping: string;
+  cheeze: boolean;
+}
+
+type Food = Tteokbokki | Pizza; // Tteokbokki 집합과 Pizza 집합 중 어디에 더 많이 속하는가!
+
+const eat = (food: Food) => {
+  if ('toping' in food) {
+    // food is Pizza
+    console.log('피자 먹는다!')
+  } else {
+    // food is Tteokbokki
+    console.log('떡볶이 먹는다!')  
+  }
+}
+```
+
+이러한 유니온 타입을 통해서 레거시 코드(지원이 종료되었거나 오래된 코드)에 대해 대처할 수 있다!!
+
+```typescript
+// Some code
+type Menu = '라면' | '김밥' | '김밥에 단무지 추가(단종되었지만.. 아직 아는 사람들이 많음..)'
+
+주문('김밥에 단무지 추가(단종되었지만.. 아직 아는 사람들이 많음..)')
+```
+
+### 교집합(Intersection Type)
+
+```typescript
+// Some code
+type JuniorDeveloper = {
+   react: boolean;
+}
+type InterMDeveloper = JuniorDeveloper & {
+   typeScript: boolean;
+}
+type SeniorDeveloper = JuniorDeveloper & InterMDeveloper & {
+   jest: boolean;
+}
+
+let me: JuniorDeveloper = {
+   react: true,
+   typeScript: true, // ERROR!!! ㅠㅠ
+}
+```
