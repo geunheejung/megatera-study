@@ -36,3 +36,71 @@
 * 생산성을 높이고 품질을 높이는것이 주요 목적이다. + 속도
 * 빠른 속도와 좋은 품질을 집중하자 -> Mocking을 적게 하고 Mock이 사실상 거의 쓰이지 않는 부분에 총력을 기울이기 위해서이다.
 * 아키텍처, 설계는 경계를 만드는 행위고, 경계를 찾는데에서 모든 문제가 출발한다.
+
+#### 실제로 해보자!
+
+```typescript
+// Some code
+
+
+test('숫자 더하기', () => {
+  expect(add(1, 2)).toBe(3);  
+});
+
+```
+
+1. 먼저 테스트를 만든다.
+2. 테스트를 실행 시킨다. -> 에러가 난다.
+3. 하나씩 테스트를 충족 시킨다.
+
+<pre class="language-typescript"><code class="lang-typescript"><strong>test('숫자 더하기', () => {
+</strong>  const add = (x: number, y:number) => 1 + 2;
+  expect(add(1, 2)).toBe(3);  
+});
+</code></pre>
+
+4. 수정을 테스트가 통과 되는걸 확인 해가면서 한다.
+
+```typescript
+// Some code
+  const add = (x: number, y:number) => x + 2; // 통과
+  const add = (x: number, y:number) => x + y; // 통과
+```
+
+테스트를 믿고서 하나씩 하나씩 변경 해가면서 확인 하는것이다!
+
+#### BDD
+
+* 행동을 묘사한다
+
+```typescript
+
+// Some code
+const context = describe;
+// BDD: 행동을 묘사한다.
+describe('add 함수는', () => {
+  context('두 개의 양수가 주어졌을 때', () => {
+    it('두 숫자의 합을 돌려준다', () => {
+      expect(add(1, 2)).toBe(3);
+    })
+
+    it('항상 두 개의 숫자보다 큰 값을 돌려준다', () => {
+      expect(add(1, 2)).toBeGreaterThan(1);
+      expect(add(1, 2)).toBeGreaterThan(2);
+    });    
+  });
+
+  context('하나의 양수와 음수가 주어지면', () => {
+    it('항상 하나의 양수보다 작은 값을 돌려준다.', () => {
+      expect(add(1, -2)).toBeLessThan(1)
+    })
+  })
+  
+})
+```
+
+* 어떻게 행동의 대해 표현하느냐에 따라 테스트가 구체적일 것 같다.
+* 표현의 대해 고민 하게 된다.
+
+해당 기능의 대한 행동들에 대해 잘 고민할수록 좋은 테스트 코드가 될 거 같다!
+
