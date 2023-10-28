@@ -96,7 +96,28 @@ import { jsxs as _jsxs } from "react/jsx-runtime";
 
 * createElement의 파라미터로 각각 전달했던 방식 -> children props로 전달
 
+**중간에 expression 들어갈 경우**
 
+```javascript
+/*#__PURE__*/React.createElement(
+  "div", 
+  null, 
+  /*#__PURE__*/React.createElement(
+    "p", 
+    null, 
+    "Count: ", 
+    count, 
+    "!"
+  ), 
+  /*#__PURE__*/React.createElement("button", {
+  onClick: () => {
+    setCount(prev => prev + 1);
+  }
+}, "Inc"));
+```
+
+* expression을 기준으로 나뉜다.
+*
 
 
 
