@@ -7,6 +7,7 @@
   * [TypeScript](1/typescript.md)
   * [React](1/react.md)
   * [Testing Library](1/testing-library.md)
+  * [React Testing Library](1/react-testing-library.md)
   * [Parcel & ESLint](1/parcel-and-eslint.md)
 * [2주차](2/README.md)
   * [관심사 분리](2/undefined.md)
