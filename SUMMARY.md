@@ -15,3 +15,5 @@
   * [JSX Transform](2/jsx-transform.md)
   * [createElement](2/createelement.md)
   * [Virtual DOM and Internals](2/virtual-dom-and-internals.md)
+* [3주차](3/README.md)
+  * [React Component](3/react-component.md)
