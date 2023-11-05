@@ -18,4 +18,4 @@
 * [3주차](3/README.md)
   * [React Component](3/react-component.md)
   * [흔히 쓰이는 SRP를 위한 수단](3/srp.md)
-  * [Untitled](3/untitled.md)
+  * [SRP: 단일 책임 원칙](3/srp-1.md)
