@@ -19,3 +19,4 @@
   * [React Component](3/react-component.md)
   * [흔히 쓰이는 SRP를 위한 수단](3/srp.md)
   * [SRP: 단일 책임 원칙](3/srp-1.md)
+  * [You probably don't need an Effect.](3/you-probably-dont-need-an-effect..md)
