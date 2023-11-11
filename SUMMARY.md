@@ -20,3 +20,7 @@
   * [흔히 쓰이는 SRP를 위한 수단](3/srp.md)
   * [SRP: 단일 책임 원칙](3/srp-1.md)
   * [You probably don't need an Effect.](3/you-probably-dont-need-an-effect..md)
+* [4주차](4/README.md)
+  * [REST API](4/rest-api.md)
+  * [Fetch API](4/fetch-api.md)
+  * [CORS(동일 출처 정책)](4/cors.md)
