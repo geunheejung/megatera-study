@@ -1,4 +1,8 @@
-# TDD
+---
+description: 구현보다 인터페이스와 스펙을 먼저 정의함으로써 개발을 진행하는 방식
+---
+
+# TDD(Test Driven Development)
 
 ### TDD(Test Driven Development)
 
