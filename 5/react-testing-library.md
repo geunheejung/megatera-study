@@ -1,5 +1,7 @@
 # React Testing Library
 
+## React Testing Library
+
 구현 기반의 테스트 도구인 Enzyme의 대안으로 자리 잡은 테스트 도구이다. RTL은 세부적인 구현사항보다는 실제 사용자 경험과 유사한 방식의 테스트를 작성할 것을 권고한다.
 
 ```html
@@ -13,7 +15,7 @@ RTL이 Jest를 포함하는 구조이다. 전반적으로 Jest를 통해 기능 
 * Jest - 자체적인 test runner와 test util 제공
 * RTL - Jest + React 컴포넌트 test util 제공
 
-#### 예제
+### 예제
 
 ***
 
@@ -47,7 +49,7 @@ test('TextField', () => {
 
 시간이 지나면 해당 코드에 대한 지식이 감소하고, 자신감 또한 감소하기 때문에 건드리기 힘든 코드가 되기 쉽상이다.
 
-#### BDD 스타일
+### BDD 스타일
 
 ***
 
@@ -104,7 +106,7 @@ describe('TextField', () => {
 
 만약 외부 의존성이 큰 코드를 작성한다면, 해당 부분만 가짜로 구현할 수 있다.
 
-#### Mocking
+### Mocking
 
 ***
 
