@@ -39,3 +39,4 @@
   * [useReducer Hooks](6/usereducer-hooks.md)
   * [D.I Container](6/d.i-container.md)
   * [Dependency Injection](6/dependency-injection.md)
+  * [Singleton Pattern?](6/singleton-pattern.md)
