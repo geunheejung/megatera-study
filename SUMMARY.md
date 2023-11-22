@@ -34,4 +34,5 @@
   * [E2E](5/e2e.md)
   * [요약](5/undefined.md)
 * [6주차 External Store](6-external-store/README.md)
+  * [Layered Architecture](6-external-store/layered-architecture.md)
   * [Flux Architecture](6-external-store/flux-architecture.md)
