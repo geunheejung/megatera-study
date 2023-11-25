@@ -43,3 +43,4 @@
   * [💉 TSyringe](6/tsyringe.md)
   * [Redux 따라하기](6/redux.md)
   * [Object Store](6/object-store.md)
+  * [관심사의 분리](6/undefined.md)
