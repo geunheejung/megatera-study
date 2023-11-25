@@ -42,3 +42,4 @@
   * [Singleton Pattern?](6/singleton-pattern.md)
   * [💉 TSyringe](6/tsyringe.md)
   * [Redux 따라하기](6/redux.md)
+  * [Object Store](6/object-store.md)
