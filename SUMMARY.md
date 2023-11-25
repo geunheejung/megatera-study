@@ -40,3 +40,5 @@
   * [D.I Container](6/d.i-container.md)
   * [Dependency Injection](6/dependency-injection.md)
   * [Singleton Pattern?](6/singleton-pattern.md)
+  * [💉 TSyringe](6/tsyringe.md)
+  * [Redux 따라하기](6/redux.md)
