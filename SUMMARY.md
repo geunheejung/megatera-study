@@ -44,3 +44,7 @@
   * [Redux 따라하기](6/redux.md)
   * [Object Store](6/object-store.md)
   * [관심사의 분리](6/undefined.md)
+* [7주차](7/README.md)
+  * [Location](7/location.md)
+  * [Routing](7/routing.md)
+  * [History Api](7/history-api.md)
