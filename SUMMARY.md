@@ -46,5 +46,7 @@
   * [관심사의 분리](6/undefined.md)
 * [7주차](7/README.md)
   * [Location](7/location.md)
-  * [Routing](7/routing.md)
   * [History Api](7/history-api.md)
+  * [React Router](7/react-router/README.md)
+    * [Memory Router](7/react-router/memory-router.md)
+    * [Routing](7/react-router/routing.md)
