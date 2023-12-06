@@ -71,4 +71,4 @@ const StyledComp = styled.div<ComponentProps>`
 ```
 
 * 템플릿 리터럴로 전달할 수 있는 평탄화된 데이터 구조이다.
-* CSS를 생략할 시,
+* CSS를 생략할 시, toString에 의해 텍스트로 평가될 수 있다.&#x20;
