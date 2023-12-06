@@ -20,7 +20,7 @@ declare module 'styled-components' {
 }
 ```
 
-### Using custom props
+## Using custom props
 
 props 기반 스타일 조정 시, 해당 소품의 base tag / component props의 일부가 아닌 경우
 
