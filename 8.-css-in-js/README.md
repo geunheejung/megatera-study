@@ -1,4 +1,4 @@
-# 8주차
+# 8.  CSS in JS
 
 > 요약 : 디자인 시스템은 여러 페이지와 채널에서 공유되는 언어와 시각적 일관성을 유지하면서 중복을 줄여 대규모로 디자인을 관리하기 위한 일련의 표준이다.\
 > \
@@ -19,7 +19,7 @@
 
 * [Laura Kalbag의 “Design Systems” 소개](https://24ways.org/2012/design-systems/)
 
-### [CSS-in-jS](../css-in-js.md)
+### [CSS-in-jS](css-in-js.md)
 
 * [A Unified Styling Language (2017)](https://blog.rhostem.com/posts/2017-06-24-unified-styling-language)
 * [All You Need To Know About CSS-in-JS (2017)](https://d0gf00t.tistory.com/22)
