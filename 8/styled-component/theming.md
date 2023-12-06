@@ -1,5 +1,7 @@
 # Theming
 
+## Theming
+
 * `<ThemeProvider>` 를 통해 완전한 테마를 지원
 * 컨텍스트 api를 통해 그 아래의 모든 react 컴포넌트에 테마를 제공
 
@@ -33,7 +35,7 @@ render(
 
 트리 상위의 다른 `ThemeProvider` 에서 부모 테마를 받는다. 테마 자체를 컨텍스트에 맞게 만들 수 있다.
 
-via `useContext` React hook
+## via `useContext` React hook
 
 ```jsx
 import { useContext } from 'react'
@@ -47,7 +49,7 @@ const MyComponent = () => {
 }
 ```
 
-via `useTheme` custom Hook
+## via `useTheme` custom Hook
 
 ```jsx
 import { useTheme } from 'styled-components'
